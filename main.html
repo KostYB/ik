@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Главная</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевые слова">
+    <meta name="author" content="BKY">
+	
+	<!--	
+
+    <meta name="image" content="./img/favicon/logo.png">
+
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Название">
+    <meta property="og:description" content="Описание">
+    <meta property="og:image" content="./img/favicon/logo.png">
+    <meta property="og:url" content="https://example.com">
+    
+    <link rel="canonical" href="https://example.com">
+
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="//cdnjs.cloudflare.com">
+    <link rel="preconnect" href="//google-analytics.com">
+	
+	
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    
+   <link rel="manifest" href="./img/favicon/manifest.json"> 
+    
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+	
+    
+    <meta name="theme-color" content="#000000">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+
+    
+
+    	
+	 <link rel="preload" href="fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin> 
+	 <link rel="preload" href="fonts/Robotobold.woff2" as="font" type="font/woff2" crossorigin> 
+	 
+	-->
+	
+	<script>
+        const totalFontSize = function() {
+            
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth; 
+            
+            if (pageWidth > 992) {
+                const value = (pageWidth * 10 / 1920).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css"> 
+	
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body class="loading">
+
+
+    <header class="hd">
+    <div class="md">
+        <div class="hd__wrapper">
+            <div class="hd__logo">
+                <a href="/" class="hd-logo">
+                    <img src="img/logo-dark.svg" alt="ik-architects" loading="lazy" width="589" height="46" class="hd-logo__img img">
+                </a>
+            </div>
+            <div class="hd__btn">
+                <button type="button" class="menu-btn js-menu-btn">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+    <div id="top"></div>
+    <main class="page-main">
+        <div class="hero">
+            <h1 class="hero__title">Главная</h1>
+            <video autoplay muted loop class="hero-video">
+<!--                <source src="https://media.istockphoto.com/videos/hdhand-checking-blueprint-work-video-id479309433" type="video/mp4">-->
+            </video>
+            
+
+            <div class="hero__scroll-down">
+                <button type="button" class="scroll-down js-scroll-down" data-scroll="main-about">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="95" height="54" viewBox="0 0 95 54" class="scroll-down__img img">
+                        <path d="M2.7 3.8L0 6.6l23.8 23.7L47.5 54l23.8-23.8L95.1 6.4 92 3.5 88.9.6 68.2 21.3 47.4 42.1 27.1 21.5C16 10.2 6.5 1 6.1 1S4.2 2.3 2.7 3.8z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div  data-color="blue"></div>
+        <div id="main-about" class="main-about">
+            <div class="md">
+                <div class="main-about__wrapper">
+                    <div class="main-about__pic">
+                        <svg class="ic ic-short-logo main-about__img"><use xlink:href="img/sprite.svg#short-logo"></use></svg>
+                    </div>
+                    <div class="main-about__desc rt">
+                        <p class="main-about__text p">ХОРОШИЙ ДИЗАЙН НЕ ВИДНО, ХОРОШАЯ АРХИТЕКТУРА НЕОЩУТИМА — ЭТО ПРОСТО КОМФОРТНОЕ СОСТОЯНИЕ И ПРОСТРАНСТВО ДЛЯ ПОЛЬЗОВАТЕЛЯ; НО ЭТО КОЛОССАЛЬНЫЕ УСИЛИЯ, ЗНАНИЯ ДЛЯ ПРОЕКТИРОВЩИКА. </p>
+                        <p class="main-about__text p">ХОРОШИЙ ДИЗАЙН НЕ ВИДНО, ХОРОШАЯ АРХИТЕКТУРА НЕОЩУТИМА — ЭТО ПРОСТО КОМФОРТНОЕ СОСТОЯНИЕ И ПРОСТРАНСТВО ДЛЯ ПОЛЬЗОВАТЕЛЯ; НО ЭТО КОЛОССАЛЬНЫЕ УСИЛИЯ, ЗНАНИЯ ДЛЯ ПРОЕКТИРОВЩИКА.</p>
+                        <a href="#" title="УЗАТЬ БОЛЬШЕ" class="main-about__btn btn">
+                            <span>УЗАТЬ БОЛЬШЕ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-color="yellow"></div>
+        <section class="main-proud">
+            <div class="md">
+                <div class="main-proud__wrapper">
+                    <div class="main-proud__lt">
+                        <div class="main-proud____pic">
+                            <svg class="ic ic-short-logo main-proud__img"><use xlink:href="img/sprite.svg#short-logo"></use></svg>
+                        </div>
+                        <ul class="main-proud-nums">
+                            <li>
+                                <div class="nums">
+                                    <span class="nums__num numscroller" data-min='1' data-max='200' data-delay='2' data-increment='1'>200</span>
+                                    <span class="nums__text">БОЛЕЕ <br> ПРОЕКТОВ</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nums">
+                                    <span class="nums__num numscroller" data-min='1' data-max='85' data-delay='2' data-increment='1'>85</span>
+                                    <span class="nums__text">ОБЪЕКТОВ <br> РЕАЛИЗОВАНО</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nums">
+                                    <span class="nums__num numscroller" data-slno="6" data-min='1' data-max='14' data-delay='2' data-increment='1'>14</span>
+                                    <span class="nums__text">ПУБЛИКАЦИЙ <br> В СМИ</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-proud__rt rt">
+                        <h2 class="main-proud__title h3">ТО, ЧЕМ МЫ ГОРДИМСЯ</h2>
+                        <p class="main-proud__text p">ДИЗАЙН ПРОЕКТ ИНТЕРЬЕРА КВАРТИР, ЧАСТНЫХ ДОМОВ, КОТТЕДЖЕЙ; ИНТЕРЬЕРЫ ОБЩЕПИТА: КАФЕ, БАРЫ, РЕСТОРАНЫ, КОФЕЙНИ; ДИЗАЙН ОФИСНЫХ И КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ. ДИЗАЙН ИНТЕРЬЕРОВ В УКРАИНЕ И ЗА РУБЕЖОМ РАЗРАБАТЫВАЕТСЯ СОВМЕСТНО С <br> ИНЖЕНЕРАМИ-ПРОЕКТИРОВЩИКАМИ, А ЭТО ЗНАЧИТ, ЧТО ТАКИЕ АСПЕКТЫ, КАК КОНСТРУКЦИИ, КОММУНИКАЦИИ БУДУТ РЕШЕНЫ НА ВЫСОКОМ УРОВНЕ. ДИЗАЙН ПРОЕКТ ИНТЕРЬЕРА КВАРТИР, ЧАСТНЫХ ДОМОВ, КОТТЕДЖЕЙ; ИНТЕРЬЕРЫ ОБЩЕПИТА: КАФЕ, БАРЫ, РЕСТОРАНЫ, КОФЕЙНИ; ДИЗАЙН ОФИСНЫХ И КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ. ДИЗАЙН ИНТЕРЬЕРОВ В УКРАИНЕ И ЗА РУБЕЖОМ РАЗРАБАТЫВАЕТСЯ СОВМЕСТНО С <br> ИНЖЕНЕРАМИ-ПРОЕКТИРОВЩИКАМИ, А ЭТО ЗНАЧИТ, ЧТО ТАКИЕ АСПЕКТЫ, КАК КОНСТРУКЦИИ, КОММУНИКАЦИИ БУДУТ РЕШЕНЫ НА ВЫСОКОМ УРОВНЕ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main-gallery">
+            <div class="main-gallery__wrapper">
+                <div class="main-gallery__items">
+                    <div class="main-gallery__item">
+                        <img src="img/arh-proect.jpg" scrset="img/arh-proect@2x.jpg 2x" alt="АРХИТЕКТУРНОЕ ПРОЕКТИРОВАНИЕ" width="640" height="880" loading="lazy" class="main-gallery__img img-full">
+                        <div class="main-gallery__desc">
+                            <div class="main-gallery__title">АРХИТЕКТУРНОЕ <br> ПРОЕКТИРОВАНИЕ</div>
+                        </div>
+                        <a href="#" class="main-gallery__link full"></a>
+                    </div>
+                    <div class="main-gallery__item">
+                        <img src="img/dis-int.jpg" scrset="img/dis-int@2x@2x.jpg 2x" alt="ДИЗАЙН ИНТЕРЬЕРОВ" width="640" height="880" loading="lazy" class="main-gallery__img img-full">
+                        <div class="main-gallery__desc">
+                            <div class="main-gallery__title">ДИЗАЙН <br> ИНТЕРЬЕРОВ</div>
+                        </div>
+                        <a href="#" class="main-gallery__link full"></a>
+                    </div>
+                    <div class="main-gallery__item">
+                        <img src="img/rec-res.jpg" scrset="img/rec-res@2x.jpg 2x" alt="РЕКОНСТРУКЦИЯ РЕСТАВРАЦИЯ" width="640" height="880" loading="lazy" class="main-gallery__img img-full">
+                        <div class="main-gallery__desc">
+                            <div class="main-gallery__title">РЕКОНСТРУКЦИЯ  <br> РЕСТАВРАЦИЯ</div>
+                        </div>
+                        <a href="#" class="main-gallery__link full"></a>
+                    </div>
+                </div>
+                <div class="main-gallery__btn">
+                    <div class="md">
+                        <a href="#" title="НАЧНЕМ ПРОЕКТ" class="btn btn_big btn_white w-38">
+                            <span>НАЧНЕМ ПРОЕКТ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cursor"></div>
+        </div>
+        <section class="main-world">
+            <div class="md">
+                <div class="main-world__wrapper">
+                    <div class="main-world__header">
+                        <h2 class="main-world__title h2">МЫ ПРОЕКТИУЕМ ПО ВСЕМУ МИРУ</h2>
+                        <div class="rt">
+                            <p class="p">МЫ — ЛЮДИ,  КОТОРЫЕ ГОВОРЯТ С ЛЮДЬМИ</p>
+                            <p class="p">МЫ ЗНАЕМ, КАК СДЕЛАТЬ ТАК, ЧТОБЫ ПОЛУЧИЛОСЬ ТО САМОЕ ОСОБЕННОЕ МЕСТО. МЫ СЧИТАЕМ СЕБЯ ПРОФЕССИОНАЛАМИ,  ПОЭТОМУ СДЕРЖИВАЕМ СВОИ ОБЕЩАНИЯ. БЕЗ ОТВЕТСТВЕННОСТИ НЕ БЫВАЕТ КАЧЕСТВЕННОГО РЕЗУЛЬТАТА. И ТАКОЙ РЕЗУЛЬТАТ — НАША РЕПУТАЦИЯ</p>
+                        </div>
+                    </div>
+                    <div class="main-world__body">
+                        <img src="img/global-map.png" srcset="img/global-map@2x.png 2x" alt="global map" width="1686" height="844" loading="lazy" class="main-world__img img">
+                    </div>
+                    <div class="main-world__footer btn-wrap">
+                         <a href="#" title="НАЧНЕМ ПРОЕКТ" class="btn btn_big w-38">
+                            <span>НАЧНЕМ ПРОЕКТ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main-team">
+            <div class="md">
+                <div class="main-team__wrapper">
+                    <div class="main-team-logo">
+                        <img src="img/logo.svg" alt="ik-architects" loading="lazy" width="589" height="46" class="main-team-logo__img img">
+                    </div>
+                </div>
+            </div>
+            <img src="img/team-total.jpg" srcset="img/team-total@2x.jpg 2x" alt="global map" width="1920" height="1280" loading="lazy" class="main-team__img img-full">
+        </div>
+        <section class="main-clients">
+            <div class="md">
+                <div class="main-clients__wrapper">
+                    <h2 class="main-clients__title h2">НАШИ КЛИЕНТЫ</h2>
+                    
+                    <div class="clients-item">
+                        <p class="main-clients__stitle h4">МАГАЗИНЫ И ОФИСЫ</p>
+                        <div class="client-list">
+                            <div class="client">
+                                <img src="img/clients/tts.png" scrset="img/clients/tts@2x.png 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/symbol.png" scrset="img/clients/symbol@2x.png 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/brunello.png" scrset="img/clients/brunello@2x.png 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/balmain.png" scrset="img/clients/balmain@2x.png 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/uz.png" scrset="img/clients/uz@2x.png 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/dia.png" scrset="img/clients/dia@2x.png 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients-item">
+                        <p class="main-clients__stitle h4">РЕСТОРАНЫ И БАРЫ</p>    
+                        <div class="client-list">
+                            <div class="client">
+                                <img src="img/clients/Masterskaya_kofe.jpg" scrset="img/clients/Masterskaya_kofe@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/just_dog_it.jpg" scrset="img/clients/just_dog_it@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/DAF.jpg" scrset="img/clients/DAF@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/Sweeter.jpg" scrset="img/clients/Sweeter@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/squeezer.jpg" scrset="img/clients/squeezer@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/Live_love_avocado.jpg" scrset="img/clients/Live_love_avocado@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/Red_door_pub.jpg" scrset="img/clients/Red_door_pub@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/krasivo_est.jpg" scrset="img/clients/krasivo_est@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/serb.png" scrset="img/clients/serb@2x.png 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/Black_door_pub.jpg" scrset="img/clients/Black_door_pub@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/roasters.png" scrset="img/clients/roasters@2x.png 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients-item">
+                        <p class="main-clients__stitle h4">КРАСОТА И  ЗДОРОВЬЕ</p>    
+                        <div class="client-list">
+                            <div class="client">
+                                <img src="img/clients/NoNameNails.jpg" scrset="img/clients/NoNameNails@2x.jpg 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                            <div class="client">
+                                <img src="img/clients/NSTVNK.png" scrset="img/clients/NSTVNK@2x.png 2x" alt="" width="180" height="180" loading="lazy" class="client__img">
+                                <a href="#" class="client__link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="ft">
+    <div class="md">
+        <div class="ft__wrapper">
+            <div class="ft__header">
+                <div class="ft__logo">
+                    <a href="/" class="ft-logo">
+                        <img src="img/logo.svg" alt="ik-architects" loading="lazy" width="493" height="38" class="ft-log__img img">
+                    </a>
+                </div>
+                <div class="ft__btn">
+                    <a href="#" title="ЗАДАТЬ ВОПРОС" class="btn btn_white">
+                        <span>ЗАДАТЬ ВОПРОС</span>
+                    </a>
+                </div>
+            </div>
+            <div class="ft__body">
+                <div class="ft__lt">
+                    <div class="ft__stitle ttu">ДАВАЙТЕ ВСТРЕТИМСЯ</div>
+                    
+                    <div class="ft__address">
+                        <a href="https://goo.gl/maps/BRD8B6YiYghYUY6Y8" target="_blank">
+                            ХАРЬКОВ,
+                            <span>ул. Университетская, 4.</span>
+                        </a>
+                    </div>
+                    <div class="ft__address">
+                        <a href="https://goo.gl/maps/6Z8pbxmgz5ZkRiiD9" target="_blank">
+                            <span>г. Киев, ул. Регенераторная, 4а</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ft__ct">
+                    <div class="ft_phone">
+                        <a href="tel:380509151894">+38 050 915 18 94</a>
+                    </div>
+                    <div class="ft_soc">
+                        <a href="#">Viber</a><span>, </span>
+                        <a href="#">Telegram</a>
+                    </div>
+                    <div class="ft__mail">
+                        <a href="mailto:office@ik-architects.com">office@ik-architects.com</a>
+                    </div>
+                </div>
+                <div class="ft__rt">
+                    <p>Время работы: с 10:00 до 19:00 <br> суббота и воскресенье — выходные</p>
+                    <p>*Встреча в офисе только по <br> предварительной записи</p>
+                </div>
+            </div>
+            <div class="ft__footer">
+                <div class="ft__lt"></div>
+                <div class="ft__ct">
+                    <ul class="ft-net"> 
+                        <li>
+                            <a href="#" title="instagram">
+                                <svg class="ic ic-instagram"><use xlink:href="img/sprite.svg#instagram"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="facebook">
+                                <svg class="ic ic-facebook"><use xlink:href="img/sprite.svg#facebook"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="youtube">
+                                <svg class="ic ic-youtube"><use xlink:href="img/sprite.svg#youtube"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="pinterest">
+                                <svg class="ic ic-pinterest"><use xlink:href="img/sprite.svg#pinterest"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="linkedin">
+                                <svg class="ic ic-linkedin"><use xlink:href="img/sprite.svg#linkedin"></use></svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="copy p">
+                        All rights reserved IK-architects
+                    </div>
+                </div>
+                <div class="ft__rt"></div>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<button type="button" class="top js-color" data-scroll="top">
+    <svg class="ic ic-scroll-down top__img"><use xlink:href="img/sprite.svg#scroll-down"></use></svg>
+</button>
+
+
+<div class="language">
+    <div class="language__wrapper">
+        <div class="language-menu">
+            <div class="language-menu__item">
+                <a href="#" class="language-menu__link">RU</a>
+            </div>
+            <div class="language-menu__item">
+                <a href="#" class="language-menu__link">UA</a>
+            </div>
+            <div class="language-menu__item">
+                <a href="#" class="language-menu__link">EN</a>
+            </div>
+        </div>
+        <div class="language-btn">
+            <svg class="ic ic-planet language-btn__icon"><use xlink:href="img/sprite.svg#planet"></use></svg>
+        </div>
+    </div>
+</div>
+
+    
+    
+
+    <script src="js/plugins/plugins.min.js"></script>
+    
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
