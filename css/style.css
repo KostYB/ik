@@ -1,7 +1,7 @@
 @font-face {
-  font-family: MyriadPro;
-  src: url(../fonts/MyriadPro-Regular.woff2) format("woff2");
-  font-weight: 400;
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Light.woff2) format("woff2");
+  font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
@@ -14,9 +14,9 @@ html {
 }
 
 body {
-  font-family: MyriadPro,sans-serif;
+  font-family: Montserrat,sans-serif;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 a {
@@ -67,7 +67,7 @@ a {
 }
 
 .h2 {
-  font-size: 8.1rem;
+  font-size: 6rem;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
@@ -88,8 +88,8 @@ a {
 }
 
 .p {
-  font-size: 2.4rem;
-  line-height: normal;
+  font-size: 2rem;
+  line-height: 1.55;
   text-transform: uppercase;
 }
 
@@ -190,7 +190,7 @@ a {
 .top {
   position: fixed;
   bottom: 4.6rem;
-  right: 2rem;
+  right: 2.5rem;
   z-index: 10;
 }
 
@@ -198,7 +198,7 @@ a {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-  font-size: 3.65rem;
+  font-size: 2.8rem;
 }
 
 .language {
@@ -244,8 +244,8 @@ a {
 
 .language-menu__link {
   display: block;
-  font-size: 2.4rem;
-  line-height: normal;
+  font-size: 2rem;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -322,7 +322,7 @@ a {
 .hd__btn {
   position: fixed;
   top: 8.4rem;
-  right: 11.6rem;
+  right: 3.3rem;
 }
 
 .menu-btn {
@@ -378,7 +378,21 @@ a {
   color: #fff;
   background-color: #17181a;
   padding-top: 8rem;
-  padding-bottom: 15rem;
+  padding-bottom: 8rem;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .ft__header {
@@ -490,6 +504,10 @@ a {
   text-transform: none;
 }
 
+.ft-log__img {
+  width: 49.3rem;
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -589,8 +607,8 @@ a {
 }
 
 .main-about {
-  padding-top: 180px;
-  padding-bottom: 130px;
+  padding-top: 18rem;
+  padding-bottom: 13rem;
 }
 
 .main-about__wrapper {
@@ -615,8 +633,7 @@ a {
 
 .main-about__img {
   display: block;
-  width: 15.2rem;
-  height: auto;
+  font-size: 15.2rem;
   margin: auto;
 }
 
@@ -685,10 +702,6 @@ a {
   justify-content: space-between;
 }
 
-.main-proud-nums li:nth-child(2) {
-  max-width: 16rem;
-}
-
 .nums__num {
   font-size: 12rem;
   line-height: 1;
@@ -708,7 +721,7 @@ a {
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.24;
-  margin-top: -1.5rem;
+  margin-top: -.5rem;
 }
 
 .main-proud__title {
@@ -784,16 +797,12 @@ a {
 
 .main-gallery__title {
   font-size: 3.7rem;
-  line-height: 1;
+  line-height: 1.4;
   font-weight: 400;
 }
 
 .main-gallery__link {
   z-index: 2;
-  cursor: url(../img/cursor_40.png),auto;
-  -webkit-transition: cursor .25s;
-  -o-transition: cursor .25s;
-  transition: cursor .25s;
 }
 
 .main-gallery__btn {
@@ -843,7 +852,7 @@ a {
 
 .main-team {
   position: relative;
-  height: 128rem;
+  padding-bottom: 20rem;
   min-height: 100vh;
   padding-top: 16rem;
 }
@@ -895,11 +904,6 @@ a {
   padding-bottom: 100%;
 }
 
-.client:hover .client__img {
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-}
-
 .client__img {
   position: absolute;
   top: 50%;
@@ -907,15 +911,9 @@ a {
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   padding: 2rem;
-  -webkit-transition: -webkit-filter .3s ease-in-out;
-  transition: filter .3s ease-in-out;
-  -o-transition: filter .3s ease-in-out;
-  transition: filter .3s ease-in-out,-webkit-filter .3s ease-in-out;
 }
 
 .client__link {
@@ -930,10 +928,4 @@ a {
   fill: none;
   stroke: #000;
   stroke-width: 2;
-}
-
-@media (min-width:1400px) {
-  .main-gallery__link {
-    cursor: url(../img/cursor.png),auto;
-  }
 }
