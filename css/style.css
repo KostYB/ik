@@ -93,6 +93,14 @@ a {
   text-transform: uppercase;
 }
 
+.ttu {
+  text-transform: uppercase;
+}
+
+.ttn {
+  text-transform: none;
+}
+
 .rt {
   width: 68.3rem;
 }
@@ -111,7 +119,7 @@ a {
 
 .btn {
   color: currentColor;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -183,15 +191,12 @@ a {
   background: #fff;
 }
 
-.btn_big {
-  font-size: 3rem;
-}
-
 .top {
   position: fixed;
   bottom: 4.6rem;
   right: 2.5rem;
   z-index: 10;
+  color: #c9caca;
 }
 
 .ic-scroll-down.top__img {
@@ -206,6 +211,7 @@ a {
   bottom: 4.6rem;
   left: 2rem;
   z-index: 10;
+  color: #c9caca;
 }
 
 .language:hover .language-menu {
@@ -341,13 +347,14 @@ a {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
+  color: #c9caca;
 }
 
 .menu-btn span {
   display: block;
   width: 100%;
   height: .4rem;
-  background-color: #000;
+  background-color: currentColor;
   margin: .7rem 0;
   -webkit-transition: width .25s;
   -o-transition: width .25s;
@@ -360,7 +367,7 @@ a {
   display: block;
   width: 100%;
   height: .4rem;
-  background-color: #000;
+  background-color: currentColor;
   -webkit-transition: width .25s;
   -o-transition: width .25s;
   transition: width .25s;
@@ -417,9 +424,6 @@ a {
 
 .ft__btn .btn {
   width: 100%;
-  padding-top: 2.3rem;
-  padding-bottom: 2.3rem;
-  font-size: 2.4rem;
 }
 
 .ft__body {
@@ -459,6 +463,18 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.ft__body a,
+.ft__footer a {
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+.ft__body a:hover,
+.ft__footer a:hover {
+  color: #c9caca;
 }
 
 .ft__lt,
@@ -852,9 +868,9 @@ a {
 
 .main-team {
   position: relative;
+  padding-top: 10rem;
   padding-bottom: 20rem;
   min-height: 100vh;
-  padding-top: 16rem;
 }
 
 .main-team-logo {
@@ -864,6 +880,11 @@ a {
 
 .main-team-logo__img {
   width: 58.9rem;
+}
+
+.main-team__img {
+  -o-object-position: bottom center;
+  object-position: bottom center;
 }
 
 .main-clients {
@@ -922,6 +943,139 @@ a {
   left: 2rem;
   right: 2rem;
   bottom: 2rem;
+}
+
+.feedback-form {
+  background-color: #17181a;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+.feedback__logo {
+  width: 49.3rem;
+  margin-bottom: 4.5rem;
+}
+
+.feedback__title {
+  color: #fff;
+}
+
+.feedback__stitle {
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.feedback__lt {
+  width: 68rem;
+}
+
+.feedback__rt {
+  width: 68rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.feedback__item {
+  margin-bottom: 2.2rem;
+}
+
+.feedback__item:last-child {
+  margin-bottom: 0;
+}
+
+.feedback__area,
+.feedback__form {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border: 2px solid #c9caca;
+  outline: 0;
+  color: currentColor;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.feedback__area::-webkit-input-placeholder,
+.feedback__form::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 1;
+}
+
+.feedback__area::-moz-placeholder,
+.feedback__form::-moz-placeholder {
+  color: currentColor;
+  opacity: 1;
+}
+
+.feedback__area:-ms-input-placeholder,
+.feedback__form:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 1;
+}
+
+.feedback__area::-ms-input-placeholder,
+.feedback__form::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 1;
+}
+
+.feedback__area::placeholder,
+.feedback__form::placeholder {
+  color: currentColor;
+  opacity: 1;
+}
+
+.feedback__form {
+  height: 7.4rem;
+}
+
+.feedback__area {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-height: 7.4rem;
+}
+
+.feedback__submit {
+  margin-top: 5.6rem;
+}
+
+.feedback-animate {
+  max-height: 17.4rem;
+  overflow: hidden;
+  -webkit-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
+}
+
+.feedback-animate .feedback__area {
+  min-height: 17.4rem;
+}
+
+.feedback-animate.show {
+  max-height: 100rem;
 }
 
 #my_svg_element {
