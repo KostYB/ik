@@ -357,52 +357,49 @@
         </section>
     </main>
 
-    <section class="feedback-form">
-    <div class="md">
-        <div class="feedback-form__wrapper">
-            <form action="/" class="feedback feedback-animate js-feedback-animate">
-                <div class="feedback__lt">
-                    <img src="img/logo.svg" alt="ik-architects" loading="lazy" width="493" height="38" class="feedback__logo img">
-                    
-                    <h2 class="feedback__title h3">НАПИШИТЕ НАМ</h2>
-                    <p class="feedback__stitle p ttn">Мы ответим на все интересующие вас вопрросы</p>
-                    <div class="feedback__item">
-                        <input type="text" class="feedback__form" placeholder="Имя *">
-                    </div>
-                    <div class="feedback__item">
-                        <input type="text" class="feedback__form" placeholder="Город, страна *">
-                    </div>
-                    <div class="feedback__item">
-                        <input type="tel" class="feedback__form" placeholder="Телефон *">
-                    </div>
-                    <div class="feedback__item">
-                        <input type="email" class="feedback__form" placeholder="e-mail">
-                    </div>
-                </div>
-                <div class="feedback__rt">
-                    <textarea class="feedback__area js-feedback-area" placeholder="Что вас интересует?"></textarea>
-                    <button type="submit" class="feedback__submit btn btn_white" title="ОТПРАВИТЬ">
-                        <span>ОТПРАВИТЬ</span>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
+    
 
     <footer class="ft">
     <div class="md">
         <div class="ft__wrapper">
-            <div class="ft__header">
+            <div class="feedback-container js-feedback-container">
+    <form action="/" class="feedback">
+        <div class="feedback__lt">
+            <img src="img/logo.svg" alt="ik-architects" loading="lazy" width="493" height="38" class="feedback__logo img">
+
+            <h2 class="feedback__title h3">НАПИШИТЕ НАМ</h2>
+            <p class="feedback__stitle p ttn">Мы ответим на все интересующие вас вопрросы</p>
+            <div class="feedback__item">
+                <input type="text" class="feedback__form" placeholder="Имя *">
+            </div>
+            <div class="feedback__item">
+                <input type="text" class="feedback__form" placeholder="Город, страна *">
+            </div>
+            <div class="feedback__item">
+                <input type="tel" class="feedback__form" placeholder="Телефон *">
+            </div>
+            <div class="feedback__item">
+                <input type="email" class="feedback__form" placeholder="e-mail">
+            </div>
+        </div>
+        <div class="feedback__rt">
+            <textarea class="feedback__area js-feedback-area" placeholder="Что вас интересует?"></textarea>
+            <button type="submit" class="feedback__submit btn btn_white" title="ОТПРАВИТЬ">
+                <span>ОТПРАВИТЬ</span>
+            </button>
+        </div>
+    </form>
+</div>
+            <div class="ft__header js-ft-header">
                 <div class="ft__logo">
                     <a href="/" class="ft-logo">
                         <img src="img/logo.svg" alt="ik-architects" loading="lazy" width="493" height="38" class="ft-log__img img">
                     </a>
                 </div>
                 <div class="ft__btn">
-                    <a href="#" title="ЗАДАТЬ ВОПРОС" class="btn btn_white">
+                    <button type="button" title="ЗАДАТЬ ВОПРОС" class="btn btn_white js-feedback-show">
                         <span>ЗАДАТЬ ВОПРОС</span>
-                    </a>
+                    </button>
                 </div>
             </div>
             <div class="ft__body">

@@ -945,10 +945,8 @@ a {
   bottom: 2rem;
 }
 
-.feedback-form {
-  background-color: #17181a;
-  padding-top: 10rem;
-  padding-bottom: 6rem;
+.feedback-container {
+  display: none;
 }
 
 .feedback__logo {
@@ -967,6 +965,7 @@ a {
 }
 
 .feedback {
+  color: #17181a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -975,6 +974,7 @@ a {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-bottom: 15rem;
 }
 
 .feedback__lt {

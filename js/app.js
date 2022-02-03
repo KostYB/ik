@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
       scrollTop: $('#' + $(this).attr('data-scroll')).offset().top
     }, 500, 'linear');
   });
-  $('.js-feedback-area').on('click', function () {
-    $('.js-feedback-animate').addClass('show');
+  $('.js-feedback-show').on('click', function () {
+    $('.js-feedback-container').slideDown(750);
+    $('.js-ft-header').hide(0);
   });
   $('html').imagesLoaded({
     background: true
