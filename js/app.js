@@ -1,10 +1,18 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
+  var lg = 992;
   $('[data-scroll]').on('click', function (e) {
     e.preventDefault();
+    var top = $('#' + $(this).attr('data-scroll')).offset().top;
+
+    if (pageWidth() < lg) {
+      top = top - 90;
+    }
+
+    console.log(top);
     $('html, body').animate({
-      scrollTop: $('#' + $(this).attr('data-scroll')).offset().top
+      scrollTop: top
     }, 500, 'linear');
   });
   $('.js-feedback-show').on('click', function () {
