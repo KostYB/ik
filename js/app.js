@@ -14,13 +14,29 @@ document.addEventListener('DOMContentLoaded', function () {
   $('html').imagesLoaded({
     background: true
   }, function () {
-    if (document.querySelector('[data-color]') != null) {
-      var elements = document.querySelectorAll('[data-color]');
-      elements.forEach(function (elem) {});
+    $('body').removeClass('loading');
+
+    if (document.querySelector('.numscroller') != null) {
+      $(document).rollerInit();
+      var elements = gsap.utils.toArray('.numscroller');
+      elements.forEach(function (elem) {
+        ScrollTrigger.create({
+          trigger: elem,
+          onEnter: function onEnter() {
+            $(elem).scrollzip({
+              showFunction: function showFunction() {
+                numberRoller($(this).attr('data-slno'));
+              },
+              wholeVisible: false
+            });
+          },
+          onEnterBack: function onEnterBack() {},
+          onLeave: function onLeave() {}
+        });
+      });
     }
 
     ;
-    $('body').removeClass('loading');
   });
 });
 
@@ -29,9 +45,3 @@ function pageWidth() {
 }
 
 ;
-
-function color(elem, direction) {
-  direction = direction || 1;
-  var color = elem.getAttribute('data-color');
-  document.querySelector('.js-color').style.color = color;
-}
