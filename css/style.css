@@ -1148,6 +1148,7 @@ main {
 
   .ft__body .ft__rt p {
     margin-bottom: 4rem;
+    line-height: 1.24;
   }
 
   .ft__body br,
@@ -1259,14 +1260,22 @@ main {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
   }
 
   .main-proud__lt {
-    padding-top: 5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding-right: 16.8rem;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
